@@ -1,0 +1,51 @@
+/*============================================================================================
+	Start Video Area
+==============================================================================================*/
+.ep-video__bg {
+  width: 100%;
+  height: 532px;
+  border-radius: 20px;
+}
+.ep-video__btn {
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 120px;
+  background: var(--ep-white-color);
+  color: var(--ep-primary-color-2) !important;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -55px;
+  margin-top: -55px;
+}
+.ep-video__btn:hover {
+  background: var(--ep-primary-color-2);
+  color: var(--ep-white-color) !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ep-video__bg {
+    height: 480px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ep-video__bg {
+    height: 280px;
+  }
+  .ep-video__btn {
+    width: 80px;
+    height: 80px;
+    line-height: 90px;
+    font-size: 24px;
+    margin-left: -40px;
+    margin-top: -40px;
+  }
+}
+
+/*============================================================================================
+	End Video Area
+==============================================================================================*/

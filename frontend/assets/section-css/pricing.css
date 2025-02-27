@@ -1,0 +1,174 @@
+/*============================================================================================
+	Start Pricing Area
+==============================================================================================*/
+.ep-pricing__shape {
+  position: absolute;
+  right: 8%;
+  top: -8%;
+}
+.ep-pricing__card {
+  margin-top: 30px;
+  border-radius: 20px;
+  background: var(--ep-white-color);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  position: relative;
+  z-index: 2;
+}
+.ep-pricing__card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+.ep-pricing__card:hover::before {
+  height: 100%;
+}
+
+.ep-pricing__card.pricing-1:hover::before {
+  background: var(--ep-primary-color-5);
+}
+.ep-pricing__card.pricing-2:hover::before {
+  background: var(--ep-primary-color-2);
+}
+.ep-pricing__card.pricing-3:hover::before {
+  background: var(--ep-primary-color-1);
+}
+.ep-pricing__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 125px;
+  height: 125px;
+  text-align: center;
+  line-height: 125px;
+  border-radius: 0px 20px;
+  transition: all 0.4s ease;
+}
+.ep-pricing__card:hover .ep-pricing__icon {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+.ep-pricing__icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.ep-pricing__card:hover .ep-pricing__icon img {
+  filter: brightness(0) invert(1);
+}
+.ep-pricing__title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 14px;
+}
+
+.ep-pricing__price {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: all 0.4s ease;
+}
+
+.ep-pricing__amount {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  transition: all 0.4s ease;
+}
+
+.ep-pricing__features {
+  margin-top: 32px;
+}
+
+.ep-pricing__features li {
+  margin-bottom: 16px;
+  transition: all 0.4s ease;
+}
+.ep-pricing__features li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ep-pricing__features li:last-child {
+  margin: 0;
+}
+
+.ep-pricing__features li {
+  line-height: 28px;
+}
+
+.ep-pricing__features li i {
+  position: relative;
+  top: 2px;
+}
+.ep-pricing__card:hover .ep-pricing__title,
+.ep-pricing__card:hover .ep-pricing__price,
+.ep-pricing__card:hover .ep-pricing__amount,
+.ep-pricing__card:hover .ep-pricing__features li {
+  color: var(--ep-white-color) !important;
+}
+.ep-pricing__btn .ep-btn.border-btn {
+  display: block;
+  text-align: center;
+  border: 2px solid var(--ep-border-color);
+}
+
+.ep-pricing__btn {
+  margin-top: 40px;
+}
+.ep-pricing__card:hover .ep-btn.border-btn {
+  border: 2px solid transparent;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--ep-white-color) !important;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .ep-pricing__shape {
+    right: 4%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ep-pricing__shape {
+    top: -48px;
+  }
+
+  .ep-pricing__icon {
+    position: initial;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ep-pricing__icon {
+    position: initial;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  .ep-pricing__icon img {
+    width: 60px;
+    height: 60px;
+  }
+  .ep-pricing__features {
+    margin-top: 24px;
+  }
+  .ep-pricing__card {
+    padding: 32px;
+  }
+}
+
+/*============================================================================================
+	End Pricing Area
+==============================================================================================*/

@@ -1,0 +1,253 @@
+/*============================================================================================
+	Start Faq Area
+==============================================================================================*/
+.ep-faq__inner {
+  border-radius: 20px;
+  background: var(--ep-white-color);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 120px 60px;
+  z-index: 2;
+}
+.ep-faq__pattern-1 {
+  position: absolute;
+  right: 30px;
+  top: 35px;
+  z-index: 1;
+}
+.ep-faq__pattern-2 {
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+  z-index: -1;
+}
+.ep-faq__img {
+  padding-right: 60px;
+}
+.ep-faq__img img {
+  width: 100%;
+  height: 554px;
+  object-fit: contain;
+}
+.ep-faq__accordion-item {
+  margin-bottom: 20px;
+}
+.ep-faq__accordion-item:last-child {
+  margin: 0;
+}
+.ep-faq__accordion-item .accordion-button {
+  background: var(--ep-white-color);
+  color: var(--ep-title-color);
+  padding: 20px 54px 20px 20px;
+  border-radius: 20px !important;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 26px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  transition: all 0.4s ease;
+}
+.ep-faq__accordion-item .accordion-button span {
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  background: var(--ep-offwhite-color);
+  border-radius: 100%;
+  text-align: center;
+  color: var(--ep-title-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 46px;
+  margin-right: 18px;
+  transition: all 0.4s ease;
+}
+.ep-faq__accordion-item .accordion-button:not(.collapsed) span {
+  width: 42px;
+  height: 38px;
+  line-height: 38px;
+  color: var(--ep-white-color);
+  background: var(--ep-primary-color-5);
+}
+.ep-faq__accordion-item .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  border-bottom: none !important;
+  background: var(--ep-offwhite-color);
+  color: var(--ep-primary-color-5);
+  border-radius: 20px 20px 0px 0px !important;
+  padding-bottom: 0;
+}
+
+.ep-faq__accordion-item .accordion-button:focus {
+  box-shadow: none;
+}
+.ep-faq__accordion-body {
+  padding: 0px 54px 30px 80px;
+  border-top: 0 !important;
+  border-radius: 0px 0px 20px 20px;
+  background: var(--ep-offwhite-color);
+  transition: all 0.4s ease;
+}
+
+.ep-faq__accordion-item .accordion-button::after {
+  background-image: none;
+  transform: none;
+  position: absolute;
+  right: 20px;
+  content: "\f13f";
+  font-family: uicons-solid-straight !important;
+  border-radius: 100%;
+  text-align: center;
+  background: var(--ep-offwhite-color);
+  color: var(--ep-secondary-color);
+  transition: all 0.4s ease;
+  font-size: 18px;
+  top: 24px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.ep-faq__accordion-item .accordion-button:not(.collapsed)::after {
+  background: var(--ep-white-color);
+  color: var(--ep-primary-color-5);
+  content: "\f13d";
+}
+
+/* Faq Style 2 */
+.ep-faq__pattern-3 {
+  position: absolute;
+  right: 11%;
+  top: 3%;
+  z-index: -1;
+}
+.ep-section-head__big-title.fs-28 {
+  font-size: 28px;
+  line-height: 150%;
+}
+.ep-faq__accordion-item--style2 .accordion-button:not(.collapsed) span {
+  background: var(--ep-primary-color-7);
+}
+
+.ep-faq__accordion-item--style2 .accordion-button:not(.collapsed) {
+  background: transparent;
+  color: var(--ep-primary-color-7);
+}
+
+.ep-faq__accordion-item--style2 .accordion-button:not(.collapsed)::after {
+  background: var(--ep-primary-color-7);
+  color: var(--ep-white-color);
+}
+
+.ep-faq__accordion-item--style2 .accordion-button {
+  box-shadow: none;
+  border: 1px solid var(--ep-border-color) !important;
+}
+
+.ep-faq__accordion-item--style2 .accordion-button::after {
+  font-family: uicons-regular-rounded !important;
+  content: "\f8d7";
+  color: var(--ep-secondary-color);
+}
+.ep-faq__accordion-item--style2 .accordion-button:not(.collapsed)::after {
+  content: "\f7e1";
+}
+
+.ep-faq__accordion-item--style2 .ep-faq__accordion-body {
+  background: transparent;
+  border: 1px solid var(--ep-border-color);
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .ep-faq__pattern-2 {
+    left: 0;
+  }
+  .ep-faq__pattern-3 {
+    right: 2%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .ep-faq__content {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ep-faq__content {
+    margin-top: 40px;
+  }
+  .ep-faq.ep-faq--style2 .ep-faq__img {
+    padding-right: 0;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .ep-section-bg.bg-img-1::before {
+    height: 1136px;
+  }
+  .ep-faq__img {
+    padding-right: 0;
+  }
+  .ep-faq__inner {
+    padding: 24px;
+  }
+
+  .ep-faq__img img {
+    height: 280px;
+  }
+  .ep-faq__pattern-1 {
+    right: 0;
+    top: 0;
+  }
+  .ep-faq__accordion-body {
+    padding: 12px 16px 12px 16px;
+  }
+
+  .ep-faq__accordion-item .accordion-button {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 20px 54px 20px 54px;
+    position: relative;
+  }
+  .ep-faq__accordion-item .accordion-button span {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    line-height: 32px;
+    margin-right: 12px;
+    position: absolute;
+    left: 12px;
+    top: 13px;
+  }
+
+  .ep-faq__accordion-item .accordion-button:not(.collapsed) {
+    padding-bottom: 12px;
+  }
+
+  .ep-faq__accordion-item .accordion-button::after {
+    top: 16px;
+  }
+
+  .ep-faq__accordion-item .accordion-button:not(.collapsed) span {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .ep-faq.ep-faq--style2 .ep-faq__img {
+    margin-top: 30px;
+  }
+  .ep-faq__content {
+    margin-top: 40px;
+  }
+  .ep-faq__accordion-item .accordion-button {
+    -webkit-line-clamp: 3;
+  }
+}
+
+/*============================================================================================
+	End Faq Area
+==============================================================================================*/

@@ -1,0 +1,23 @@
+/*============================================================================================
+	Start Brand Area
+==============================================================================================*/
+.ep-brand__slider.owl-carousel .owl-item,
+.ep-brand__logo {
+  text-align: center;
+}
+
+.ep-brand__logo img {
+  width: 200px !important;
+  height: 100px !important;
+  object-fit: contain;
+  display: inline-block !important;
+}
+
+/* Brand Style 2 */
+.ep-brand__logo--style2 img {
+  height: 56px !important;
+}
+
+/*============================================================================================
+	End Brand Area
+==============================================================================================*/

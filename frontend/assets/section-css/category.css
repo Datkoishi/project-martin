@@ -1,0 +1,44 @@
+/*============================================================================================
+	Start Category Area
+==============================================================================================*/
+
+.ep-category__card {
+  display: block;
+  border: 5px solid var(--ep-offwhite-color);
+  border-radius: 20px;
+  padding: 0px 30px 30px 30px;
+  margin-top: 70px;
+  transition: all 0.4s ease;
+}
+.ep-category__card:hover {
+  transform: translateY(-5px);
+}
+
+.ep-category__icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: -40px;
+}
+.ep-category__icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.ep-category__info {
+  margin-top: 20px;
+}
+.ep-category__info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0;
+}
+
+/*============================================================================================
+	End Category Area
+==============================================================================================*/

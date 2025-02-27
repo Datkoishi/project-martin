@@ -1,0 +1,1662 @@
+  <!-- End Breadcrumbs Area -->
+  <section class="ep-course__details section-gap position-relative">
+    <div class="container ep-container">
+        <div class="row">
+            <div class="col-lg-12 col-xl-8 col-12">
+                <div class="ep-course__details-tab">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ep-course__overview">
+                                <div class="ep-course__overview-widget">
+                                    <h3 class="ep-course__overview-title">Tạo bộ câu hỏi trắc nghiệm</h3>
+                                    <p class="ep-course__overview-text">Vui lòng nhập câu hỏi và đáp án cho bài thi trắc nghiệm. Mỗi câu hỏi phải có ít nhất 4 đáp án và chỉ 1 đáp án đúng.</p>
+                                </div>
+                                <div class="ep-course__overview-widget">
+                                    <form id="quizForm">
+                                        <div class="form-group">
+                                            <label for="examId">Exam ID</label>
+                                            <input type="text" id="examId" name="examId" class="form-control" required>
+                                        </div>
+                                        <div class="ep-course__curriculum">
+                                            <div class="ep-course__accordion accordion" id="accordionExample">
+                                               
+
+                                                <div class="ep-course__accordion" id="accordionExample">
+                                                    <!-- Question 1 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading1">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                          Câu hỏi 1
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question1">Câu hỏi 1</label>
+                                                            <input type="text" id="question1" name="questions[0][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question1-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question1-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer1-1" name="questions[0][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer1-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer1-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer1-2" name="questions[0][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer1-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer1-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer1-3" name="questions[0][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer1-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer1-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer1-4" name="questions[0][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer1-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer1-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct1-1" name="questions[0][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct1-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct1-2" name="questions[0][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct1-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct1-3" name="questions[0][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct1-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct1-4" name="questions[0][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct1-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <!-- Question 2 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading2">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                          Câu hỏi 2
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question2">Câu hỏi 2</label>
+                                                            <input type="text" id="question2" name="questions[1][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question2-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question2-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer2-1" name="questions[1][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer2-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer2-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer2-2" name="questions[1][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer2-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer2-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer2-3" name="questions[1][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer2-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer2-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer2-4" name="questions[1][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer2-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer2-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct2-1" name="questions[1][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct2-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct2-2" name="questions[1][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct2-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct2-3" name="questions[1][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct2-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct2-4" name="questions[1][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct2-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <!-- Question 3 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading3">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                          Câu hỏi 3
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question3">Câu hỏi 3</label>
+                                                            <input type="text" id="question3" name="questions[2][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question3-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question3-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer3-1" name="questions[2][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer3-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer3-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer3-2" name="questions[2][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer3-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer3-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer3-3" name="questions[2][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer3-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer3-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer3-4" name="questions[2][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer3-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer3-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct3-1" name="questions[2][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct3-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct3-2" name="questions[2][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct3-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct3-3" name="questions[2][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct3-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct3-4" name="questions[2][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct3-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <!-- Question 4 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading4">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                          Câu hỏi 4
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question4">Câu hỏi 4</label>
+                                                            <input type="text" id="question4" name="questions[3][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question4-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question4-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer4-1" name="questions[3][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer4-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer4-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer4-2" name="questions[3][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer4-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer4-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer4-3" name="questions[3][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer4-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer4-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer4-4" name="questions[3][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer4-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer4-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct4-1" name="questions[3][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct4-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct4-2" name="questions[3][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct4-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct4-3" name="questions[3][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct4-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct4-4" name="questions[3][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct4-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                    <!-- Question 5 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading5">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                          Câu hỏi 5
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question5">Câu hỏi 5</label>
+                                                            <input type="text" id="question5" name="questions[4][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question5-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question5-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question5-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer5-1" name="questions[4][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer5-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer5-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer5-2" name="questions[4][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer5-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer5-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer5-3" name="questions[4][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer5-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer5-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer5-4" name="questions[4][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer5-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer5-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct5-1" name="questions[4][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct5-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct5-2" name="questions[4][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct5-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct5-3" name="questions[4][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct5-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct5-4" name="questions[4][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct5-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  
+                                                   <!-- Question 6 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading6">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                        Câu hỏi 6
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question6">Câu hỏi 6</label>
+                                                          <input type="text" id="question6" name="questions[5][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question6-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question6-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question6-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer6-1" name="questions[5][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer6-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer6-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer6-2" name="questions[5][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer6-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer6-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer6-3" name="questions[5][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer6-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer6-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer6-4" name="questions[5][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer6-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer6-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct6-1" name="questions[5][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct6-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct6-2" name="questions[5][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct6-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct6-3" name="questions[5][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct6-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct6-4" name="questions[5][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct6-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 7 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading7">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                        Câu hỏi 7
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question7">Câu hỏi 7</label>
+                                                          <input type="text" id="question7" name="questions[6][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question7-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question7-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question7-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer7-1" name="questions[6][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer7-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer7-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer7-2" name="questions[6][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer7-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer7-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer7-3" name="questions[6][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer7-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer7-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer7-4" name="questions[6][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer7-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer7-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct7-1" name="questions[6][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct7-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct7-2" name="questions[6][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct7-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct7-3" name="questions[6][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct7-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct7-4" name="questions[6][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct7-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 8 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading8">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                                        Câu hỏi 8
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question8">Câu hỏi 8</label>
+                                                          <input type="text" id="question8" name="questions[7][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question8-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question8-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question8-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer8-1" name="questions[7][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer8-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer8-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer8-2" name="questions[7][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer8-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer8-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer8-3" name="questions[7][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer8-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer8-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer8-4" name="questions[7][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer8-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer8-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct8-1" name="questions[7][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct8-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct8-2" name="questions[7][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct8-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct8-3" name="questions[7][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct8-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct8-4" name="questions[7][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct8-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 9 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading9">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                                        Câu hỏi 9
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question9">Câu hỏi 9</label>
+                                                          <input type="text" id="question9" name="questions[8][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question9-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question9-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question9-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer9-1" name="questions[8][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer9-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer9-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer9-2" name="questions[8][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer9-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer9-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer9-3" name="questions[8][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer9-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer9-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer9-4" name="questions[8][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer9-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer9-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct9-1" name="questions[8][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct9-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct9-2" name="questions[8][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct9-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct9-3" name="questions[8][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct9-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct9-4" name="questions[8][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct9-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                    <!-- Question 10 -->
+                                                    <div class="ep-course__accordion-item">
+                                                      <h2 class="accordion-header" id="heading10">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                          Câu hỏi 10
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+                                                        <div class="ep-course__accordion-body">
+                                                          <div class="form-group">
+                                                            <label for="question10">Câu hỏi 10</label>
+                                                            <input type="text" id="question10" name="questions[9][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label for="question10-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                            <input type="file" id="question10-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                            <img id="question10-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Nhập đáp án:</label>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer10-1" name="questions[9][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                              <input type="file" id="answer10-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer10-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer10-2" name="questions[9][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                              <input type="file" id="answer10-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer10-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer10-3" name="questions[9][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                              <input type="file" id="answer10-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer10-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                            <div class="form-group">
+                                                              <input type="text" id="answer10-4" name="questions[9][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                              <input type="file" id="answer10-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                              <img id="answer10-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                            </div>
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <label>Chọn đáp án đúng:</label>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct10-1" name="questions[9][correct]" class="form-check-input" value="0" required>
+                                                              <label for="correct10-1" class="form-check-label">Đáp án 1</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct10-2" name="questions[9][correct]" class="form-check-input" value="1" required>
+                                                              <label for="correct10-2" class="form-check-label">Đáp án 2</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct10-3" name="questions[9][correct]" class="form-check-input" value="2" required>
+                                                              <label for="correct10-3" class="form-check-label">Đáp án 3</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input type="radio" id="correct10-4" name="questions[9][correct]" class="form-check-input" value="3" required>
+                                                              <label for="correct10-4" class="form-check-label">Đáp án 4</label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 11 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading11">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                                        Câu hỏi 11
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question11">Câu hỏi 11</label>
+                                                          <input type="text" id="question11" name="questions[10][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question11-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question11-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question11-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer11-1" name="questions[10][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer11-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer11-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer11-2" name="questions[10][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer11-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer11-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer11-3" name="questions[10][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer11-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer11-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer11-4" name="questions[10][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer11-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer11-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct11-1" name="questions[10][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct11-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct11-2" name="questions[10][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct11-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct11-3" name="questions[10][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct11-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct11-4" name="questions[10][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct11-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 12 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading12">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                                        Câu hỏi 12
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question12">Câu hỏi 12</label>
+                                                          <input type="text" id="question12" name="questions[11][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question12-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question12-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question12-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer12-1" name="questions[11][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer12-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer12-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer12-2" name="questions[11][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer12-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer12-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer12-3" name="questions[11][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer12-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer12-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer12-4" name="questions[11][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer12-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer12-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct12-1" name="questions[11][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct12-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct12-2" name="questions[11][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct12-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct12-3" name="questions[11][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct12-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct12-4" name="questions[11][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct12-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 13 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading13">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                                        Câu hỏi 13
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question13">Câu hỏi 13</label>
+                                                          <input type="text" id="question13" name="questions[12][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question13-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question13-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question13-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer13-1" name="questions[12][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer13-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer13-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer13-2" name="questions[12][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer13-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer13-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer13-3" name="questions[12][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer13-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer13-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer13-4" name="questions[12][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer13-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer13-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct13-1" name="questions[12][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct13-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct13-2" name="questions[12][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct13-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct13-3" name="questions[12][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct13-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct13-4" name="questions[12][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct13-4" class="form-check-label">required>
+                                                            <label for="correct13-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 14 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading14">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                                        Câu hỏi 14
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question14">Câu hỏi 14</label>
+                                                          <input type="text" id="question14" name="questions[13][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question14-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question14-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question14-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer14-1" name="questions[13][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer14-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer14-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer14-2" name="questions[13][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer14-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer14-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer14-3" name="questions[13][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer14-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer14-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer14-4" name="questions[13][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer14-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer14-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct14-1" name="questions[13][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct14-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct14-2" name="questions[13][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct14-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct14-3" name="questions[13][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct14-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct14-4" name="questions[13][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct14-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 15 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading15">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                                        Câu hỏi 15
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question15">Câu hỏi 15</label>
+                                                          <input type="text" id="question15" name="questions[14][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question15-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question15-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question15-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer15-1" name="questions[14][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer15-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer15-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer15-2" name="questions[14][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer15-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer15-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer15-3" name="questions[14][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer15-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer15-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer15-4" name="questions[14][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer15-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer15-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct15-1" name="questions[14][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct15-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct15-2" name="questions[14][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct15-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct15-3" name="questions[14][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct15-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct15-4" name="questions[14][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct15-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <!-- Question 16 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading16">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                                        Câu hỏi 16
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question16">Câu hỏi 16</label>
+                                                          <input type="text" id="question16" name="questions[15][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question16-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question16-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question16-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer16-1" name="questions[15][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer16-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer16-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer16-2" name="questions[15][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer16-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer16-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer16-3" name="questions[15][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer16-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer16-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer16-4" name="questions[15][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer16-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer16-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct16-1" name="questions[15][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct16-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct16-2" name="questions[15][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct16-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct16-3" name="questions[15][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct16-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct16-4" name="questions[15][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct16-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 17 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading17">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                                        Câu hỏi 17
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question17">Câu hỏi 17</label>
+                                                          <input type="text" id="question17" name="questions[16][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question17-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question17-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question17-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer17-1" name="questions[16][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer17-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer17-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer17-2" name="questions[16][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer17-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer17-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer17-3" name="questions[16][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer17-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer17-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer17-4" name="questions[16][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer17-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer17-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct17-1" name="questions[16][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct17-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct17-2" name="questions[16][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct17-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct17-3" name="questions[16][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct17-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct17-4" name="questions[16][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct17-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 18 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading18">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                                        Câu hỏi 18
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question18">Câu hỏi 18</label>
+                                                          <input type="text" id="question18" name="questions[17][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question18-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question18-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question18-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer18-1" name="questions[17][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer18-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer18-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer18-2" name="questions[17][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer18-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer18-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer18-3" name="questions[17][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer18-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer18-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer18-4" name="questions[17][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer18-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer18-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct18-1" name="questions[17][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct18-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct18-2" name="questions[17][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct18-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct18-3" name="questions[17][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct18-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct18-4" name="questions[17][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct18-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 19 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading19">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                                        Câu hỏi 19
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question19">Câu hỏi 19</label>
+                                                          <input type="text" id="question19" name="questions[18][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question19-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question19-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question19-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer19-1" name="questions[18][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer19-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer19-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer19-2" name="questions[18][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer19-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer19-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer19-3" name="questions[18][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer19-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer19-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer19-4" name="questions[18][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer19-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer19-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct19-1" name="questions[18][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct19-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct19-2" name="questions[18][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct19-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct19-3" name="questions[18][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct19-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct19-4" name="questions[18][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct19-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 20 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading20">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                                        Câu hỏi 20
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question20">Câu hỏi 20</label>
+                                                          <input type="text" id="question20" name="questions[19][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question20-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question20-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question20-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer20-1" name="questions[19][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer20-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer20-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer20-2" name="questions[19][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer20-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer20-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer20-3" name="questions[19][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer20-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer20-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer20-4" name="questions[19][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer20-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer20-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct20-1" name="questions[19][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct20-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct20-2" name="questions[19][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct20-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct20-3" name="questions[19][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct20-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct20-4" name="questions[19][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct20-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 21 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading21">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                                                        Câu hỏi 21
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question21">Câu hỏi 21</label>
+                                                          <input type="text" id="question21" name="questions[20][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question21-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question21-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question21-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer21-1" name="questions[20][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer21-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer21-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer21-2" name="questions[20][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer21-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer21-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer21-3" name="questions[20][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer21-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer21-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer21-4" name="questions[20][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer21-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer21-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct21-1" name="questions[20][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct21-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct21-2" name="questions[20][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct21-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct21-3" name="questions[20][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct21-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct21-4" name="questions[20][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct21-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div><!-- Question 22 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading22">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                                                        Câu hỏi 22
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question22">Câu hỏi 22</label>
+                                                          <input type="text" id="question22" name="questions[21][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question22-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question22-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question22-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer22-1" name="questions[21][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer22-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer22-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer22-2" name="questions[21][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer22-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer22-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer22-3" name="questions[21][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer22-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer22-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer22-4" name="questions[21][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer22-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer22-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct22-1" name="questions[21][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct22-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct22-2" name="questions[21][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct22-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct22-3" name="questions[21][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct22-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct22-4" name="questions[21][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct22-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 23 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading23">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                                                        Câu hỏi 23
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question23">Câu hỏi 23</label>
+                                                          <input type="text" id="question23" name="questions[22][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question23-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question23-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question23-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer23-1" name="questions[22][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer23-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer23-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer23-2" name="questions[22][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer23-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer23-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer23-3" name="questions[22][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer23-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer23-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer23-4" name="questions[22][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer23-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer23-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct23-1" name="questions[22][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct23-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct23-2" name="questions[22][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct23-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct23-3" name="questions[22][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct23-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct23-4" name="questions[22][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct23-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 24 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading24">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                                                        Câu hỏi 24
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question24">Câu hỏi 24</label>
+                                                          <input type="text" id="question24" name="questions[23][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question24-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question24-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question24-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer24-1" name="questions[23][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer24-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer24-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer24-2" name="questions[23][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer24-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer24-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer24-3" name="questions[23][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer24-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer24-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer24-4" name="questions[23][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer24-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer24-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct24-1" name="questions[23][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct24-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct24-2" name="questions[23][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct24-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct24-3" name="questions[23][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct24-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct24-4" name="questions[23][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct24-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <!-- Question 25 -->
+                                                  <div class="ep-course__accordion-item">
+                                                    <h2 class="accordion-header" id="heading25">
+                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                                                        Câu hỏi 25
+                                                      </button>
+                                                    </h2>
+                                                    <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#accordionExample">
+                                                      <div class="ep-course__accordion-body">
+                                                        <div class="form-group">
+                                                          <label for="question25">Câu hỏi 25</label>
+                                                          <input type="text" id="question25" name="questions[24][text]" class="form-control" placeholder="Nhập câu hỏi" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label for="question25-image">Thêm ảnh cho câu hỏi (nếu có):</label>
+                                                          <input type="file" id="question25-image" name="questionImage" class="form-control-file" accept="image/*">
+                                                          <img id="question25-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Nhập đáp án:</label>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer25-1" name="questions[24][answers][0][text]" class="form-control" placeholder="Đáp án 1" required>
+                                                            <input type="file" id="answer25-1-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer25-1-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer25-2" name="questions[24][answers][1][text]" class="form-control" placeholder="Đáp án 2" required>
+                                                            <input type="file" id="answer25-2-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer25-2-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer25-3" name="questions[24][answers][2][text]" class="form-control" placeholder="Đáp án 3" required>
+                                                            <input type="file" id="answer25-3-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer25-3-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                          <div class="form-group">
+                                                            <input type="text" id="answer25-4" name="questions[24][answers][3][text]" class="form-control" placeholder="Đáp án 4" required>
+                                                            <input type="file" id="answer25-4-image" name="answerImages" class="form-control-file mt-1" accept="image/*">
+                                                            <img id="answer25-4-image-preview" src="#" alt="Preview" style="display:none; max-width: 200px; margin-top: 10px;">
+                                                          </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                          <label>Chọn đáp án đúng:</label>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct25-1" name="questions[24][correct]" class="form-check-input" value="0" required>
+                                                            <label for="correct25-1" class="form-check-label">Đáp án 1</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct25-2" name="questions[24][correct]" class="form-check-input" value="1" required>
+                                                            <label for="correct25-2" class="form-check-label">Đáp án 2</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct25-3" name="questions[24][correct]" class="form-check-input" value="2" required>
+                                                            <label for="correct25-3" class="form-check-label">Đáp án 3</label>
+                                                          </div>
+                                                          <div class="form-check">
+                                                            <input type="radio" id="correct25-4" name="questions[24][correct]" class="form-check-input" value="3" required>
+                                                            <label for="correct25-4" class="form-check-label">Đáp án 4</label>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="ep-btn">Lưu bộ câu hỏi</button>
+                                        </div>
+                                        <div id="submitMessage" class="mt-3"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-xl-4 col-md-8 col-12">
+                <div class="ep-course__sidebar">
+                    <div class="ep-course__sidebar-data">
+                        <h4 class="ep-course__sidebar-title">Thông tin chung</h4>
+                        <ul class="ep-course__sidebar-data-list">
+                            <li>
+                                <span>Giáo viên :</span>
+                                <strong>Nguyễn Văn A</strong>
+                            </li>
+                            <li>
+                                <span>Môn học :</span>
+                                <strong>Toán học</strong>
+                            </li>
+                            <li>
+                                <span>Thời lượng :</span>
+                                <strong>1 giờ</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

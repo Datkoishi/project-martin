@@ -1,0 +1,99 @@
+/*============================================================================================
+	Start Service Area
+==============================================================================================*/
+
+.ep-service__card {
+  margin-top: 30px;
+  border: 1px solid var(--ep-border-color);
+  padding: 40px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+.ep-service__card:hover {
+  border: 1px solid transparent;
+}
+.ep-service__card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0%;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+  z-index: -1;
+}
+.ep-service__card:hover::before {
+  height: 100%;
+}
+.ep-service__card.service-1:hover::before {
+  background: var(--ep-primary-color-1);
+}
+.ep-service__card.service-2:hover::before {
+  background: var(--ep-primary-color-2);
+}
+.ep-service__card.service-3:hover::before {
+  background: var(--ep-primary-color-4);
+}
+.ep-service__card.service-4:hover::before {
+  background: var(--ep-primary-color-7);
+}
+.ep-service__card.service-5:hover::before {
+  background: var(--ep-primary-color-6);
+}
+.ep-service__card.service-6:hover::before {
+  background: var(--ep-primary-color-5);
+}
+
+.ep-service__icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  transition: all 0.4s ease;
+}
+.ep-service__card:hover .ep-service__icon img {
+  filter: brightness(0) invert(1);
+}
+.ep-service__info {
+  margin-top: 20px;
+}
+
+.ep-service__info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.ep-service__card:hover .ep-service__info h3,
+.ep-service__card:hover .ep-service__info p,
+.ep-service__card:hover .ep-service__btn a {
+  color: var(--ep-white-color);
+}
+
+.ep-service__btn {
+  margin-top: 32px;
+}
+
+.ep-service__btn a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--ep-secondary-color);
+}
+.ep-service__btn a:hover {
+  gap: 6px;
+}
+.ep-service__btn a i {
+  position: relative;
+  top: 3px;
+  font-size: 18px;
+}
+
+/*============================================================================================
+	End Service Area
+==============================================================================================*/

@@ -1,0 +1,203 @@
+.loadingresult
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 226, 226, 0.8);
+    z-index: 100000;
+    transition: 0.5s;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    display: none;
+}
+
+.thankyou-page
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    width: 100%;
+
+    clip-path: circle(0.0% at 50% 50%);
+    pointer-events: none;
+    visibility: hidden;
+    transition: 1s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -9999999999;
+    width: 100%;
+    height: 100%;
+}
+
+.thankyou_show
+{
+    pointer-events: all;
+    clip-path: circle(70.7% at 50% 50%);
+    visibility: visible;
+    z-index: 999999999;
+
+}
+.thankyouheader
+{
+    background-color: var(--primary-color);
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.thankyou-page-inner
+{
+    flex: 1;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.thankyou-page-inner img
+{
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.thankyou-page-inner span
+{
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+}
+.thankyou-page-inner h1
+{
+    font-size: 70px;
+    color: rgb(27, 27, 27);
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.subscribe
+{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    height: 85px; 
+    border-radius: 50px;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    padding-left: 50px;
+}
+.subscribe input
+{
+    border: 0;
+    width: 70%;
+    height: inherit;
+    font-size: 18px;
+    color: rgb(9, 9, 9);
+    padding-right: 20px;
+}
+.subscribe input:focus
+{
+    outline: none;
+}
+.subscribe button
+{
+    width: 30%;
+    border-radius: inherit;
+    background-color: rgb(75, 75, 75);
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border: 0;
+}
+
+
+
+/* responsive */
+
+
+/* large screens */
+@media (min-width: 1600px)
+{
+
+}
+
+
+@media (max-width: 1500px)
+{
+
+}
+
+
+/* Desktops/Laptops */
+@media (max-width: 1200px)
+{
+
+}
+
+/* Laptops */
+@media (max-width: 1024px)
+{
+    .thankyou-page-inner h1
+    {
+        font-size: 50px;
+    }
+    .subscribe input
+    {
+        width: 60%;
+    }
+    .subscribe button
+    {
+        width: 40%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px)
+{
+    .thankyou-page-inner span
+    {
+        font-size: 15px;
+    }
+
+
+
+    .thankyou-page-inner h1
+    {
+        width: 90%;
+        font-size: 30px;
+    }
+    .subscribe
+    {
+        width: 90%;
+        padding-left: 20px;
+        height: 60px;
+    }
+    .subscribe input
+    {
+        width: 50%;
+    }
+    .subscribe button
+    {
+        width: 50%;
+    }
+}
+
+/* mobile */
+@media (max-width: 480px)
+{
+
+}

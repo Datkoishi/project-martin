@@ -1,0 +1,124 @@
+/*============================================================================================
+	Start Funfact Area
+==============================================================================================*/
+
+.ep-funfact__card {
+  text-align: center;
+}
+
+.ep-funfact__icon {
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+.ep-funfact__icon img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.ep-funfact__info {
+  margin-top: 30px;
+}
+
+.ep-funfact__info h4 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.04px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+/* Funfact Style 2 */
+.ep-funfact-shape {
+  position: absolute;
+  right: 16%;
+  z-index: -1;
+  top: -32%;
+}
+.ep-funfact__card--style2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  background: var(--ep-white-color);
+}
+.ep-funfact__card--style2:hover {
+  transform: translateY(-5px);
+}
+.ep-funfact__card--style2 .ep-funfact__icon {
+  border-radius: 20px;
+}
+.ep-funfact__card--style2 .ep-funfact__info {
+  text-align: left;
+}
+.ep-funfact__card--style2 .ep-funfact__icon img {
+  width: 60px;
+  height: 60px;
+}
+.ep-funfact__card--style2 .ep-funfact__info h4 {
+  margin-bottom: 5px;
+  color: var(--ep-paragraph-color);
+}
+
+.ep-funfact__card--style2 .ep-funfact__info p {
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .ep-funfact-shape {
+    right: 7%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .ep-funfact__card--style2 {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ep-funfact.section-gap {
+    padding: 40px 0px 80px;
+  }
+  .ep-funfact__card {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ep-funfact.section-gap {
+    padding: 40px 0px 80px;
+  }
+  .ep-funfact__card {
+    margin-top: 40px;
+  }
+  .ep-funfact__info {
+    margin-top: 24px;
+  }
+  .ep-funfact__info h4 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .ep-funfact__icon {
+    width: 90px;
+    min-width: 90px;
+    height: 90px;
+    line-height: 90px;
+  }
+  .ep-funfact__card--style2 .ep-funfact__icon img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/*============================================================================================
+	End Funfact Area
+==============================================================================================*/

@@ -1,0 +1,286 @@
+/*================================================================================================
+    Mobile Menu 
+===================================================================================================*/
+.mobile-menu-modal {
+  z-index: 99999;
+}
+.mobile-menu-modal .offcanvas-logo img {
+  max-width: 154px;
+  height: 40px;
+  object-fit: contain;
+}
+.mobile-menu-offcanvas-toggler {
+  text-align: center;
+  display: inline-block;
+  padding: 0px !important;
+  z-index: 3;
+  border-radius: 50%;
+  border: none;
+  display: none;
+  width: 28px;
+  height: 14px;
+  line-height: 50px;
+  background: transparent;
+  z-index: 888;
+}
+.mobile-menu-offcanvas-toggler .line {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--ep-secondary-color);
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+}
+.mobile-menu-offcanvas-toggler:hover .line {
+  background: var(--ep-primary-color-5);
+}
+.mobile-menu-offcanvas-toggler .line + .line {
+  margin-top: 4px;
+}
+
+.mobile-menu-modal-main-body {
+  padding: 24px 20px;
+  overflow-y: scroll;
+}
+.mobile-menu-modal.offcanvas-modal.modal.fade .modal-dialog {
+  transform: translateX(-100%);
+}
+.mobile-menu-modal.offcanvas-modal.modal.show .modal-dialog {
+  transform: translateX(0%);
+}
+.mobile-menu-modal .offcanvas-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+}
+.mobile-menu-modal .offcanvas-dialog .modal-content {
+  height: 100%;
+  border-radius: 0;
+  border: 0;
+}
+.mobile-menu-modal .offcanvas-header {
+  border: none;
+  padding: 18px 20px !important;
+  position: relative;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--ep-offwhite-color);
+}
+.mobile-menu-modal .offcanvas-header .btn-close {
+  color: var(--ep-primary-color-5);
+  opacity: 1;
+  width: 35px;
+  height: 35px;
+  line-height: 39px;
+  border-radius: 100%;
+  padding: 0;
+  font-size: 13px;
+  background: transparent;
+  transition: all 0.4s ease;
+  margin: 0;
+  float: right;
+  border: 1px solid var(--ep-primary-color-5) !important;
+}
+.mobile-menu-modal .offcanvas-header .btn-close:hover {
+  background: var(--ep-primary-color-5);
+  border: 1px solid transparent !important;
+  color: var(--ep-white-color);
+}
+.mobile-menu-modal .offcanvas-menu::before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background-color: var(--ep-white-color);
+}
+
+.offcanvas-men-list {
+  padding-bottom: 78px;
+}
+
+.mobile-menu-modal .offcanvas-menu li {
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--ep-border-color);
+  padding-bottom: 16px;
+}
+.mobile-menu-modal .offcanvas-menu li:last-child {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.mobile-menu-modal .offcanvas-menu li.active .menu-arrow {
+  color: var(--ep-primary-color-5);
+}
+.mobile-menu-modal .offcanvas-menu li.active .menu-arrow::before {
+  background: var(--ep-primary-color-5) !important;
+  color: var(--ep-white-color) !important;
+}
+.mobile-menu-modal .offcanvas-menu li a {
+  font-weight: 500;
+  display: block;
+  text-transform: capitalize;
+  color: var(--ep-secondary-color);
+  font-size: 16px;
+}
+.mobile-menu-modal .offcanvas-menu li a:hover {
+  color: var(--ep-primary-color-5);
+}
+.mobile-menu-modal .offcanvas-menu li a i {
+  margin-left: 10px;
+}
+.mobile-menu-modal .offcanvas-modal .modal-content {
+  padding: 0px 15px;
+}
+.modal-backdrop.fade.show {
+  background: var(--ep-secondary-color);
+  opacity: 0.5;
+  z-index: 9999;
+}
+.mobile-menu-modal .offcanvas-btn {
+  margin-top: 30px;
+}
+.mobile-menu-modal-bottom-button {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: var(--ep-white-color);
+  border-top: 1px solid var(--border-color);
+}
+.mobile-menu-modal-bottom-button .theme-btn {
+  width: 100%;
+}
+.mobile-menu-modal-bottom-button .theme-btn {
+  display: block;
+  text-align: center;
+  padding: 12px 12px;
+  font-size: 14px;
+}
+.mobile-menu-modal-bottom-button .theme-btn:hover {
+  background: var(--ep-secondary-color);
+  color: var(--ep-white-color);
+}
+
+#offcanvas-menu .sub-menu {
+  margin-top: 16px;
+  margin-left: 12px;
+  display: none;
+}
+#offcanvas-menu .sub-menu li:last-child {
+  margin: 0;
+  padding: 0;
+}
+#offcanvas-menu .sub-menu li a {
+  font-size: 15px;
+}
+#offcanvas-menu .sub-menu li .menu-active {
+  color: var(--ep-primary-color-5);
+}
+
+#offcanvas-menu .sub-menu li a:hover,
+#offcanvas-menu .sub-menu li.active a {
+  color: var(--ep-primary-color-5) !important;
+}
+#offcanvas-menu .menu-arrow {
+  position: relative;
+}
+#offcanvas-menu .menu-arrow.active a {
+  color: var(--ep-primary-color-5);
+}
+#offcanvas-menu .sub-menu li {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+#offcanvas-menu .menu-arrow.active .sub-menu li a {
+  color: var(--ep-secondary-color);
+}
+#offcanvas-menu .menu-arrow.active .sub-menu li.active a {
+  color: var(--ep-primary-color-5);
+}
+#offcanvas-menu .menu-arrow:hover::before {
+  background: var(--ep-primary-color-5);
+  color: var(--ep-white-color);
+}
+#offcanvas-menu .menu-arrow::before {
+  position: absolute;
+  font-family: uicons-solid-straight !important;
+  content: "\f13f";
+  font-size: 16px;
+  right: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  background: #ff723a1a;
+  border-radius: 100%;
+  color: var(--ep-primary-color-5);
+  text-align: center;
+  line-height: 24px;
+  transition: all 0.4s ease;
+}
+#offcanvas-menu .menu-arrow.active::before {
+  background: var(--ep-primary-color-5);
+  color: var(--ep-white-color);
+  content: "\f110";
+}
+
+.mobile-menu-modal .offcanvas-menu li.active .menu-arrow::before {
+  content: "\f13d" !important;
+}
+
+.mobile-menu-modal-bottom .theme-btn {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 15px;
+}
+.mobile-menu-modal-bottom .theme-btn i {
+  font-size: 18px;
+  top: 1px;
+  position: relative;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.9px) {
+  .mobile-menu-offcanvas-toggler {
+    display: block;
+  }
+  .mobile-menu-modal .offcanvas-dialog {
+    width: 400px;
+  }
+  .mobile-menu-offcanvas-toggler {
+    top: 6%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .mobile-menu-offcanvas-toggler {
+    display: block;
+  }
+  .mobile-menu-modal .offcanvas-dialog {
+    width: 400px;
+  }
+  .mobile-menu-offcanvas-toggler {
+    top: 6%;
+    float: right;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mobile-menu-offcanvas-toggler {
+    display: block;
+    float: right;
+  }
+}
+
+/*================================================================================================
+    End Mobile Menu 
+===================================================================================================*/

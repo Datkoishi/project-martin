@@ -1,0 +1,92 @@
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1440px) {
+  .countdown {
+    top: 30%;
+  }
+}
+@media (max-width: 1200px) {
+  .question {
+    font-size: 40px;
+  }
+  .options {
+    gap: 25px;
+  }
+  .options .option {
+    width: 20%;
+    height: 200px;
+  }
+  .option label {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .stepCounter {
+    display: none;
+  }
+  .options .option {
+    width: 25%;
+    height: 180px;
+  }
+  .question {
+    font-size: 30px;
+  }
+  .option label {
+    font-size: 18px;
+  }
+  .nextPrev button {
+    font-size: 20px;
+    height: 80px;
+    padding: 0 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px 20px;
+  }
+  .stepImg {
+    width: 50%;
+  }
+  .countdown {
+    right: 20px;
+  }
+  .options .option {
+    height: 120px;
+  }
+  .option img {
+    width: 70%;
+  }
+  .option label {
+    font-size: 15px;
+  }
+}
+@media (max-width: 576px) {
+  .countdown {
+    display: none;
+  }
+  .qNumber {
+    font-size: 20px;
+  }
+  .question {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stepImg {
+    width: 100%;
+  }
+  .options {
+    flex-wrap: wrap;
+  }
+  .options .option {
+    width: 75%;
+  }
+  .nextPrev button {
+    height: 60px;
+    padding: 0 24px;
+  }
+}

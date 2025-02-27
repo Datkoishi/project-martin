@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&family=Sen:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: rgb(1, 47, 71);
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Jost";
+}
+
+main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  padding: 10px 48px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.stepCounter {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 212, 212);
+
+  justify-content: center;
+  align-items: end;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bgColor {
+  content: "";
+  width: 100%;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: 0.5s;
+}
+.stepCounter .stepSingle {
+  height: 150px;
+  background-color: rgb(212, 212, 212);
+  width: 100%;
+}
+.stepSingle .stepBar::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.active.stepSingle .stepBar::before {
+  height: calc(100% + 70px);
+}
+.stepBar {
+  background-color: rgb(212, 212, 212);
+  height: calc(100% - 70px);
+  width: 100%;
+  position: relative;
+}
+.stepSingle span {
+  display: grid;
+  place-content: center;
+  width: 70px;
+  height: 70px;
+  border: solid 15px rgb(212, 212, 212);
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Sen";
+  transform: translateX(15px);
+  transition: 0.5s;
+  color: rgb(212, 212, 212);
+  position: relative;
+  z-index: 100;
+  font-weight: bold;
+}
+.stepSingle.active span {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.steps {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.qNumber {
+  font-size: 43px;
+  font-family: "Sen";
+  color: rgb(0, 0, 0);
+}
+.question {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.stepImg {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+.stepImg img {
+  width: 100%;
+}
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+  align-items: center;
+}
+.options .option {
+  width: 19%;
+  height: 256px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+}
+.option input {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 15px;
+  border: solid 3px transparent;
+  background-color: rgb(255, 255, 255);
+  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.option input:checked {
+  border-color: rgb(24, 255, 0);
+}
+.option img,
+label {
+  pointer-events: none;
+  position: relative;
+  z-index: 100;
+}
+.option img {
+  width: auto;
+  margin: 0 auto;
+}
+.option label {
+  font-size: 26px;
+  color: rgb(87, 96, 114);
+  font-weight: bold;
+  margin-top: 5px;
+}
+.nextPrev {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-top: 30px;
+}
+.nextPrev button {
+  padding: 0 30px;
+  border-radius: 10px;
+  background-color: rgb(1, 47, 71);
+  height: 88px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: "Russo One";
+  border: 0;
+}
+
+.countdown {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  width: 220px;
+  height: 170px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.countdown img {
+  width: auto;
+  margin-bottom: 15px;
+}
+.countdown h3 {
+  font-size: 18.5px;
+  color: rgb(1, 47, 71);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#countdown {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: auto;
+}
+#countdown .timeSingle {
+  border-right: solid 1px rgb(202, 202, 202);
+  padding-right: 10px;
+  font-size: 11px;
+  color: rgb(0, 10, 56);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+#countdown .timeSingle .time {
+  color: rgb(0, 10, 56);
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1;
+}
+#error {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000000000;
+}

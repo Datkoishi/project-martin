@@ -1,0 +1,260 @@
+/*============================================================================================
+	Start Auth Area
+==============================================================================================*/
+
+.ep-auth__card {
+  border-radius: 20px;
+  background: var(--ep-white-color);
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+  padding: 60px;
+  margin: 0px 8px;
+}
+
+.ep-auth__card-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ep-auth__card-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50.04px;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+
+.ep-auth__card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.ep-auth__card-social {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ep-auth__card-social a {
+  border: 1px solid var(--ep-border-color);
+  border-radius: 20px;
+  padding: 12px 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--ep-secondary-color);
+}
+.ep-auth__card-social a:hover {
+  background: var(--ep-offwhite-color);
+}
+
+.ep-auth__card-social a img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.ep-auth__another-way {
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.ep-auth__another-way::before,
+.ep-auth__another-way::after {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  background: var(--ep-border-color);
+  top: 50%;
+}
+.ep-auth__another-way::before {
+  left: 0;
+}
+.ep-auth__another-way::after {
+  right: 0;
+}
+
+.ep-auth__card-form .form-group {
+  margin-bottom: 16px;
+}
+.ep-auth__card-form .form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.ep-auth__card-form .form-group input {
+  width: 100%;
+  border-radius: 20px;
+  border: 1.5px solid var(--ep-border-color);
+  height: 58px;
+  padding: 18px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--ep-secondary-color);
+}
+.ep-auth__card-form .form-group input:focus {
+  border: 1.5px solid var(--ep-primary-color-1);
+}
+
+.ep-auth__card-form .form-group-input {
+  position: relative;
+}
+.ep-auth__card-form .toggle-password {
+  position: absolute;
+  right: 24px;
+  top: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+  color: #4f536c66;
+  transition: all 0.4s ease;
+}
+.ep-auth__card-form .toggle-password:hover {
+  color: var(--ep-paragraph-color);
+}
+.ep-auth__card-form .form-group-input input {
+  padding: 18px 56px 18px 24px !important;
+}
+
+.ep-auth__card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ep-auth__card-info .form-check {
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0;
+}
+.ep-auth__card-info .form-check label {
+  color: var(--ep-paragraph-color);
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.ep-auth__card-info .form-check label a {
+  color: var(--ep-primary-color-2);
+  text-decoration: none;
+}
+.ep-auth__card-info .form-check input {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  border: 1px solid var(--ep-border-color);
+}
+.ep-auth__card-info .form-check input:focus {
+  box-shadow: none;
+  border-color: var(--ep-primary-color-1);
+}
+.ep-auth__card-info .form-check .form-check-input:checked {
+  background-color: var(--ep-primary-color-1);
+}
+
+.ep-auth__card-info a:hover {
+  color: var(--ep-primary-color-1);
+  text-decoration: underline;
+}
+.ep-auth__card-form-btn .ep-btn {
+  padding: 20px 26px;
+  width: 100%;
+  margin-top: 12px;
+  background: var(--ep-primary-color-1);
+}
+.ep-auth__card-bottom {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.ep-auth__card-bottom a {
+  border: 1px solid var(--ep-border-color);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--ep-secondary-color);
+  padding: 6px 16px;
+  display: inline-block;
+}
+.ep-auth__card-bottom a:hover {
+  background: var(--ep-offwhite-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .ep-auth__card {
+    padding: 32px;
+    margin: 0;
+  }
+
+  .ep-auth__card-title {
+    font-size: 28px;
+  }
+
+  .ep-auth__card-social {
+    margin-top: 32px;
+  }
+
+  .ep-auth__card-social a {
+    margin-bottom: 12px;
+  }
+  .ep-auth__card-bottom {
+    display: block;
+  }
+  .ep-auth__card-bottom a {
+    margin-top: 8px;
+  }
+  .ep-auth__card-social {
+    display: block;
+  }
+  .ep-auth__card-form .form-group input {
+    height: 52px;
+  }
+  .ep-auth__card-info {
+    display: block;
+  }
+  .ep-auth__card-info a {
+    margin-top: 8px;
+  }
+
+  .ep-auth__card-info .form-check label {
+    font-size: 14px;
+    line-height: 120%;
+  }
+
+  .ep-auth__another-way::before,
+  .ep-auth__another-way::after {
+    width: 20%;
+  }
+
+ 
+}
+
+/*============================================================================================
+	End Auth Area
+==============================================================================================*/
